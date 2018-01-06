@@ -5,25 +5,276 @@
 	<style type='text/css'>
 		html,body{
 		margin-left: 15px;
+		}		
+		
+		body{
+		background-color:#000000;
+		zoom:25%;
 		}
 			
-		div{
-		margin:0px auto;
-		width: 1892px;
-		height: 2168px;
+		.img4-1{
+		 display:block;
+		margin: auto;
+		//width: 2158px;
+		//height: 2704px;
 		}
 	
+		#whit{
+		position:relative;		
+		background-color:white;
+		margin:0px auto;
+		width: 3550px;
+		height:auto;
+		min-height:2500px;
+		}
 		
+		#editi{
+		position:absolute;
+		right:100px;
+		bottom:100px;
+		width:242px;
+		height:149px;
+		background-image:url(4-21.png);
+		}
+		
+		#endediti{
+		display:none;
+		position:absolute;
+		right:100px;
+		bottom:100px;
+		width:499px;
+		height:149px;
+		background-image:url(4-22.png);
+		}
+		
+		
+		#ArtistNamed{
+		display:inline-block;
+		position:relative;
+		background-color:#ececec;
+		top:130px;left:130px;
+		height: 200px;
+		min-width:400px;
+		width:auto;
+		max-width: 3450px;
+		margin:0;
+		}
+		
+		.d{
+		position:relative;
+		top:230px;left:130px;
+		height: 300px;
+		min-width:400px;
+		width:auto;
+		max-width: 3450px;
+		margin:0;
+		}
+		
+		.img9{
+		position:absolute;
+		left:50px;		
+		width:56px;
+		height:96px;
+		background-image:url(9-1.png);
+		}
+		
+		#img9-1{
+		display:none;
+		top:540px;
+		}
+		#img9-2{
+		display:none;
+		top:847px;
+		}	
+		#img9-3{
+		display:none;
+		top:1160px;
+		}
+		#img9-4{
+		display:none;
+		top:1440px;
+		}
+		#img9-5{
+		display:none;
+		top:1750px;
+		}
+		
+		span{
+		
+		font-size:150px;
+		//vertical-align:middle;
+		line-height:300px;
+		}
+		
+		.t91{
+		line-height:300px;
+		height:164px;
+		width: 900px;
+		padding:0px;
+		font-size:150px;
+		}
+		
+		#t911{display:none;}#t912{display:none;}#t913{display:none;}#t914{display:none;}#t915{display:none;}
+		
+		
+		#BirthPlace{
+		//display:none;
+		}
+		
+		.img101{
+		width:156px;
+		height:86px;
+		background-image:url(10-1.png);
+		}
+		
+		#img1011{
+		display:none;	
+		}
+		#img1012{
+		display:none;	
+		}
+		#img1013{
+		display:none;	
+		}
+		#img1014{
+		display:none;	
+		}
+		#img1015{
+		display:none;	
+		}
+		
+		.div102{
+		display:inline-block;
+		position:relative;
+		top:80px;
+		left:150px;
+		}
+		
+		#img102id{
+		display:none;
+		width:156px;
+		height:86px;
+		background-image:url(10-2.png);
+		}
 		
 		
 	</style>
     <script type="text/javascript">
+		function edit(){
+			document.getElementById("img9-1").style.display = "block";
+			document.getElementById("img9-2").style.display = "block";
+			document.getElementById("img9-3").style.display = "block";
+			document.getElementById("img9-4").style.display = "block";
+			document.getElementById("img9-5").style.display = "block";
+			document.getElementById("img102id").style.display = "block";
+			document.getElementById("editi").style.display = "none";
+			document.getElementById("endediti").style.display = "block";			
+		}
 		
+		function endedit(){
+			document.getElementById("img9-1").style.display = "none";
+			document.getElementById("img9-2").style.display = "none";
+			document.getElementById("img9-3").style.display = "none";
+			document.getElementById("img9-4").style.display = "none";
+			document.getElementById("img9-5").style.display = "none";
+			document.getElementById("editi").style.display = "block";
+			document.getElementById("endediti").style.display = "none";	
+			document.getElementById("t911").style.display ="none";document.getElementById("t912").style.display ="none";
+			document.getElementById("t913").style.display ="none";document.getElementById("t914").style.display ="none";
+			document.getElementById("t915").style.display ="none";
+			document.getElementById("img1011").style.display ="none";document.getElementById("img1012").style.display ="none";
+			document.getElementById("img1013").style.display ="none";document.getElementById("img1014").style.display ="none";
+			document.getElementById("img1015").style.display ="none";
+			document.getElementById("img102id").style.display = "none";
+		}
+		
+		function edit1(){
+			document.getElementById("BirthPlace").style.display = "none";
+			document.getElementById("t911").style.display = "inline-block";
+			document.getElementById("img1011").style.display = "inline-block";
+		}
+		function edit2(){
+			document.getElementById("BirthPlace").style.display = "none";
+			document.getElementById("t912").style.display = "inline-block";
+			document.getElementById("img1012").style.display = "inline-block";
+		}
+		function edit3(){
+			document.getElementById("BirthPlace").style.display = "none";
+			document.getElementById("t913").style.display = "inline-block";
+			document.getElementById("img1013").style.display = "inline-block";
+		}
+		function edit4(){
+			document.getElementById("BirthPlace").style.display = "none";
+			document.getElementById("t914").style.display = "inline-block";
+			document.getElementById("img1014").style.display = "inline-block";
+		}
+		function edit5(){
+			document.getElementById("BirthPlace").style.display = "none";
+			document.getElementById("t915").style.display = "inline-block";
+			document.getElementById("img1015").style.display = "inline-block";
+		}
+		
+		function done1(){
+			
+		}
     </script>
 </head>
-<body bgcolor="#000000">
-	<div>
-	<img src = "4.png" class="">
+<body>
+	
+	<img src = "4-1.png" class="img4-1">
+	<br>
+	<div id = "whit">
+	
+		<div id="ArtistNamed">
+			<span id="ArtistName"></span>
+		</div>
+		<div class="div102">
+		<input id="img102id" type="button" onclick="delete()" >
+		</div>
+		<input id="img9-1" type="button" onclick="edit1()" class="img9">
+		<!--<img src = "9-1.png" id="img9-1">-->
+		<div class="d BirthPlacec">
+		<span>出生地&nbsp;&nbsp;</span>
+		<span id="BirthPlace"></span>
+		<input name="text" type="text" required id="t911" class="t91">
+		<input id="img1011" type="button" onclick="done1()" class="img101">
+		</div>
+		
+		<input id="img9-2" type="button" onclick="edit2()" class="img9">
+		<div class="d BirthYearc">
+		<span>出生年&nbsp;&nbsp;</span>
+		<span id="BirthYear"></span>
+		<input name="text" type="text" required id="t912" class="t91">
+		<input id="img1012" type="button" onclick="done2()" class="img101">
+		</div>
+		
+		<input id="img9-3" type="button" onclick="edit3()" class="img9">
+		<div class="d DeathYearAgec">
+		<span>逝世年/年齡&nbsp;&nbsp;</span>
+		<span id="DeathYearAge"></span>
+		<input name="text" type="text" required id="t913" class="t91">
+		<input id="img1013" type="button" onclick="done3()" class="img101">
+		</div>
+		
+		<input id="img9-4" type="button" onclick="edit4()" class="img9">
+		<div class="d ArtStylec">
+		<span>風格&nbsp;&nbsp;</span>
+		<span id="ArtStyle"></span>
+		<input name="text" type="text" required id="t914" class="t91">
+		<input id="img1014" type="button" onclick="done4()" class="img101">
+		</div>
+	
+		<input id="img9-5" type="button" onclick="edit5()" class="img9">
+		<div class="d Masterpiecec">
+		<span>代表作&nbsp;&nbsp;</span>
+		<span id="Masterpiece"></span>
+		<input name="text" type="text" required id="t915" class="t91">
+		<input id="img1015" type="button" onclick="done5()" class="img101">
+		</div>
+		
+		<input id="editi" type="button" onclick="edit()">
+		<input id="endediti" type="button" onclick="endedit()">
 	</div>
+	<br><br><br>
 </body>
 </html>

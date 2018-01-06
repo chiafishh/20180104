@@ -1,0 +1,177 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>00457035_王家瑜HW5-2</title>
+	<style type='text/css'>
+		html,body{
+		margin-left: 15px;
+		}		
+		
+		body{
+		background-color:#000000;
+		zoom:25%;
+		}
+			
+		.img4-1{
+		 display:block;
+		margin: auto;
+		//width: 2158px;
+		//height: 2704px;
+		}
+	
+		#whit{
+		position:relative;		
+		background-color:white;
+		margin:0px auto;
+		width: 3550px;
+		height:auto;
+		min-height:2500px;
+		}
+				
+		#endediti{
+		position:absolute;
+		right:100px;
+		bottom:100px;
+		width:499px;
+		height:149px;
+		background-image:url(4-22.png);
+		}
+		
+		.Artworknamec{
+		display:inline-block;
+		position:relative;
+		background-color:#ececec;
+		top:300px;left:-225px;
+		height: 200px;
+		min-width:900px;
+		width:auto;
+		max-width: 3450px;
+		margin:0;
+		}
+		
+		.d{
+		position:relative;
+		top:270px;left:130px;
+		height: 300px;
+		min-width:400px;
+		width:auto;
+		max-width: 3450px;
+		margin:0;
+		}
+		
+		span{
+		
+		font-size:150px;
+		//vertical-align:middle;
+		line-height:300px;
+		}
+		
+		.t91{
+		line-height:300px;
+		height:164px;
+		width: 900px;
+		padding:0px;
+		font-size:150px;
+		}
+		
+		#t911{
+		
+		}
+		#t912{
+		
+		}
+		#t913{
+		
+		}
+		#t914{
+		
+		}
+		#t915{
+		
+		}
+		
+		.Artwork{
+		position:relative;
+		top:90px;left:130px;
+		}
+		
+		#Artworknameid{
+		height:140px;
+		width: 900px;
+		padding:0px;
+		margin:30px;
+		font-size:140px;
+		}
+		
+		.imgAdd{
+		position:absolute;
+		top:100px;
+		right:100px;
+		//z-index:3;
+		}
+		
+		#imgDone{
+		width:272px;
+		height:160px;
+		background-image:url(12-3Done.png);
+		}
+		
+	</style>
+    <script type="text/javascript">
+		function edit(){
+			document.getElementById("editi").style.display = "none";
+			document.getElementById("endediti").style.display = "block";		
+			document.getElementById("t91").style.display = "inline-block";
+		}
+		
+		function endedit(){
+			document.getElementById("editi").style.display = "block";
+			document.getElementById("endediti").style.display = "none";	
+			document.getElementById("t91").style.display ="none";
+		}
+	
+		function Done(){
+		
+		}
+    </script>
+</head>
+<body>
+	
+	
+	<br>
+	<div id = "whit">
+		<img src = "12-2Add.png" class="imgAdd">
+		<img src = "12-12Artwork.png" class="Artwork">
+		<div class = "Artworknamec">
+			<span id="Artworkname"></span>
+			<input name="text" type="text" required id="Artworknameid">
+		</div>
+		
+		<div class="d">
+		<span>藝術家&nbsp;&nbsp;</span>
+		<input name="text" type="text" required id="t911" class="t91">
+		</div>
+		
+		<div class="d">
+		<span>創作年份&nbsp;&nbsp;</span>
+		<input name="text" type="text" required id="t912" class="t91">
+		</div>
+		
+		<div class="d">
+		<span>風格&nbsp;&nbsp;</span>
+		<input name="text" type="text" required id="t913" class="t91">
+		</div>
+		
+		<div class="d">
+		<span>領域&nbsp;&nbsp;</span>
+		<input name="text" type="text" required id="t914" class="t91">
+		</div>
+		
+		<div class="d">
+		<input id="imgDone" type="button" onclick="Done()">
+		</div>
+		<input id="endediti" type="button" onclick="endedit()">
+	</div>
+	<br><br><br>
+</body>
+</html>

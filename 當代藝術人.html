@@ -1,12 +1,20 @@
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" ; >
     <title>00457035_王家瑜HW5-2</title>
 	<style type='text/css'>
 		html,body{
 		margin-left: 15px;
+	
 		}
-			
+		
+		
+		body{
+		background-color:#000000;
+		zoom:65%;
+		}
+		
+		
 		/*div{
 		left: 0;
 		right: 0;
@@ -44,7 +52,7 @@
 		width: 1100px;
 		}
 		
-		.d2{
+		#d2{
 		position:relative;
 		display:inline-block;
 		//margin-left: 15px;
@@ -55,7 +63,16 @@
 		
 		}
 		
-		
+		#d2e{
+		display:none;
+		position:absolute;
+		//display:inline-block;
+		left:0px;
+		margin:0;
+		width: 412px;
+		height: 575px;
+		z-index:7;
+		}
 		
 		
 		.img1-2{
@@ -67,6 +84,12 @@
 		
 		.img2d21{
 		display:none;
+		}
+		
+		#img22-1{
+		//display:none;
+		z-index:8;
+		width:375px;height: 146px;
 		}
 		
 		.img2{
@@ -81,7 +104,7 @@
 		
 		.img2-{
 		position:absolute;
-		z-index:4;
+		z-index:8;
 		width: 125%;
 		height: auto;
 		}
@@ -93,6 +116,9 @@
 		.img2-2{
 		left:20px;
 		top:185.17px;
+		}
+		.img22-2{
+		top:70.17px;
 		}
 		.img2-3{
 		left:20px;
@@ -107,8 +133,13 @@
 		top:400.59px;
 		}
 		.img2-6{
+		position:absolute;
+		z-index:4;
 		left:20px;
 		top:470.76px;
+		width:375px;
+		height:75.1px;
+		background-image:url(2-6.png);
 		}
 		
 		
@@ -117,8 +148,15 @@
 		position:absolute;
 		left:90px;
 		top:133px;
-		z-index:4;
+		z-index:9;
+		}
 		
+		.d22l{
+		//display:none;
+		position:absolute;
+		left:70px;
+		top:18px;
+		z-index:10;
 		}
 		
 		input{
@@ -136,7 +174,7 @@
 		//left:303px;
 		top:0px;
 		right:0px;
-		width: 796px;
+		width: 687px;
 		height: 575px;
 		}
 		
@@ -144,6 +182,24 @@
 		//float: right; 
 		position:absolute;
 		right:0px;
+		}
+		
+		.img3{
+		width: 100px;height: 100px;
+		position:relative;
+		top: 200px;left:600px;
+		}
+		
+		.a3{
+		display:none;
+		}
+		
+		.img1-3:hover ~ .a3{
+		display:block;
+		}
+		
+		.a3:hover{
+		display:block;
 		}
 		
 		nav{
@@ -169,13 +225,117 @@
 		}*/
 		
 		
+		.img7-5{
+		position:relative;
+		left:100px;
+		width:128px;height:41px;
+		background-image:url(7-5.png);
+		}
 		
+		
+		#img7n{
+		position:relative;
+		display:none;
+		top:-345px;
+		left:70px;
+		}
+		
+		.img7n2{
+		position:absolute;
+		//top:-400px;
+		}
+		.img7n3{
+		position:absolute;
+		top:122px;
+		}
+		.img7n4{
+		position:absolute;
+		top:180px;
+		}
+		.img7n5{
+		position:absolute;
+		top:240px;
+		}
+		
+		#img22d{
+		position:relative;
+		display:none;
+		//margin-left: 15px;
+		//top:280px;
+		margin:0;
+		width: 300px;
+		height: 575px;
+		//z-index:8;
+		}
 	</style>
-    <script type="text/javascript">
-		
-    </script>
+    
 </head>
-<body bgcolor="#000000">
+<body>
+	<script type="text/javascript">
+		
+		
+		function a()
+		{
+			document.getElementById("d2").style.display = "none";
+			document.getElementById("d2e").style.display = "inline-block";
+			document.getElementById("img7n").style.display = "inline-block";
+		}
+		
+		function fendedit()
+		{
+			document.getElementById("d2").style.display = "inline-block";
+			document.getElementById("d2e").style.display = "none";
+			document.getElementById("img7n").style.display = "none";
+		}
+		
+		//var edit = document.getElementById( "edit" );
+        //edit.addEventListener( "click", a, false );
+		function over71()
+		{
+			
+			document.getElementById("img22d").style.display = "inline-block";
+			document.getElementById("img22d").style.top = "98px";
+		}
+		
+		function over72()
+		{
+			document.getElementById("img22d").style.display = "inline-block";
+			document.getElementById("img22d").style.top = "212px";
+		}
+		
+		function over73()
+		{
+			document.getElementById("img22d").style.display = "inline-block";
+			document.getElementById("img22d").style.top = "337px";
+		}
+		
+		function over74()
+		{
+			document.getElementById("img22d").style.display = "inline-block";
+			document.getElementById("img22d").style.top = "457px";
+		}
+		
+		function over7()
+		{
+			document.getElementById("img22d").style.display = "inline-block";
+		}
+		
+		function out7()
+		{
+			document.getElementById("img22d").style.display = "none";
+		}
+		
+		
+		/*var x = document.getElementById("asd");
+		x.addEventListener("mouseover", over71);
+		var x1 = document.getElementById("asd");
+		x1.addEventListener("mouseout", out7);
+		*/
+		//var x = document.getElementById("img22d");
+		//x.addEventListener("mouseout", out7,true);
+		
+
+    </script>
 	<br>
 	
 		
@@ -184,7 +344,8 @@
 	</div>
 	
 	<div class="bd">
-		<div ="" class="d2">
+		
+		<div id="d2">
 			
 			<img src = "1-2.png" class="imgg img1-2">
 			<div class="img2d21">
@@ -194,17 +355,40 @@
 				<a href="當代藝術人2.html" target="_blank"><img src = "2-3.png" class="img2- img2-3"></a>
 				<a href="當代藝術人2.html" target="_blank"><img src = "2-4.png" class="img2- img2-4"></a>
 				<a href="當代藝術人2.html" target="_blank"><img src = "2-5.png" class="img2- img2-5"></a>
-				<a href="當代藝術人2.html" target="_blank"><img src = "2-6.png" class="img2- img2-6"></a>
-				<a href="當代藝術人2.html" target="_blank"><img src = "2.png" class="img2"></a>
+				<input id="edit" type="button" class="img2-6" onclick="a()">
+				
 				<div class="d2l"><label><input name="text" type="text" required></label>
 				</div>
+			</div>
+		</div>
+		<div id="d2e">
+			<!--<img src = "7-1.png" onmouseout="out7()" onmouseover ="over71()"><br><br><br>-->
+			<img src = "7-1.png" onmouseover="over71()"><br><br><br>
+			<img src = "7-2.png" onmouseover ="over72()"><br><br><br>
+			<img src = "7-3.png" onmouseover ="over73()"><br><br><br>
+			<img src = "7-4.png" onmouseover ="over74()"><br><br><br>
+			<input id="endedit" type="button" class="img7-5" onclick="fendedit()">
+			<div id="img7n">
+			<img src = "7n1.png">
+			<a href="當代藝術人3-1Artist.html" target="_blank"><img src = "7n2.png" class="img7n2"></a>
+			<a href="當代藝術人3-2Artwork.html" target="_blank"><img src = "7n3.png" class="img7n3"></a>
+			<a href="當代藝術人3-3Style.html" target="_blank"><img src = "7n4.png" class="img7n4"></a>
+			<a href="當代藝術人3-4Field.html" target="_blank"><img src = "7n5.png" class="img7n5"></a>
 			</div>
 		</div>
 		
 		<div class="d3">
 			<img src = "1-3.png" class="img1-3">
+			<a href="當代藝術人2.html" target="_blank" class="a3"><img src = "3.png" class="img3"></a>
 		</div>
-		<!--<img src = "1-22.png" class="img22">-->
+		<div id="img22d">
+		<div id="img22-1" onmouseover="over7()" onmouseout="out7()">
+			<img src = "2-1.png" class="img2-">
+			<a href="當代藝術人2.html" target="_blank"><img src = "2-2.png" class="img2- img22-2"></a>
+			<div class="d22l"><label><input name="text" type="text" required></label>
+			</div>
+		</div>
+		</div>
 	</div>
 	
 </body>
